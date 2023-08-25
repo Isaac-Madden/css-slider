@@ -1,0 +1,52 @@
+
+  /*-----Image Container-----*/
+  .image-container {
+    width: 3000px;
+    height: 300px;
+    position: relative;
+    transition: left 3s;
+  }
+
+  /*-----Image Viewpoint-----*/
+  .slider {
+    width: 1000px;
+    height: 300px;
+    text-align: center;
+    overflow: hidden;
+  }
+
+  /*-----Position of Images-----*/
+  .slide {
+    float: left;
+    position: relative;
+  }
+
+  /*-----Placement of buttons-----*/
+  .buttons {
+    position: relative;
+    top: -30px;
+  }
+
+  /*-----Styling of buttons-----*/
+  .buttons a {
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    border-radius: 50px;
+    background-color: lightgreen;
+  }
+
+  /*-----button functionality-----*/
+  #slide-1:target ~ .image-container {
+    left: 0px;
+  }
+
+  #slide-2:target ~ .image-container {
+    left: -1000px;
+  }
+
+  #slide-3:target ~ .image-container {
+    left: -2000px;
+  }
+
+
